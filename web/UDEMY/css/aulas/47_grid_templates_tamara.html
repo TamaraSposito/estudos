@@ -1,0 +1,94 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+
+<head>
+  <title> pagina de exemplo estrutura basica </title>
+  <meta charset="utf-8">
+  <meta name="author" content="Daniel">
+  <meta name="description" content="descrição bacanuda">
+  <meta name="keywords" content="html5, tecnologia">
+
+  <style>
+    body {
+      background: url(imagens/tile.png);
+    }
+
+    h2 {
+      font: italic small-caps bold 30px Georgia, serif;
+    }
+
+    .gridContainer {
+      width: 90%;
+      background: #ccc;
+      margin: 30px auto;
+    }
+
+    .gridItem {
+      background-color: orange;
+      padding: 15px;
+      font-family: sans-serif;
+    }
+
+    /* GRID */
+    .gridContainer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 100px 50px 1fr 50px;
+      /* header nav (fracão conteudo) footer */
+      grid-gap: 8px;
+      grid-template-areas: 
+        "header header  header"
+        "nav    nav     aside"
+        "main   main    aside"
+        "footer footer  footer"
+        /* para ter celulas vazias podemos usar o "."
+        para que o template funcione perfeitamente, precisa seguir a quantidade de colunas e linhas especificadas na Grid-templates.
+        se colocar a mais ou a menos da problema.*/
+    }
+
+    .header {
+      grid-area: header;
+    }
+
+    .nav {
+      grid-area: nav;
+
+    }
+
+    .aside {
+      grid-area: aside;
+      background-color: rgba(127, 255, 212, 0.71);
+    }
+
+    .main {
+      grid-area: main;
+      min-height: 300px;
+    }
+
+    .footer {
+      grid-area: footer;
+      background: rgba(14, 14, 111, 0.35);
+    }
+
+  </style>
+</head>
+
+<body>
+  <h2>Grid Layout</h2>
+
+
+  <div class="gridContainer">
+    <header class="header gridItem">header</header>
+    <nav class="nav gridItem">nav</nav>
+    <aside class="aside gridItem">aside</aside>
+    <main class="main gridItem">
+      main
+    </main>
+    <footer class="footer gridItem">footer</footer>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+body {
+  font-family: sans-serif;
+  margin: 35px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 800;
+  font-variant: small-caps;
+  text-align: right;
+  border-right: 3px dotted gray;
+  padding: 0 20px
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  font-variant: small-caps;
+  text-align: left;
+  border-left: 3px solid gray;
+  padding: 0 15px
+}
+
+a[target="_blank"]:after {
+  content: url(imagens/newWindow.png);
+  display: inline-block;
+  margin-left: 15px;
+}
+
+a[href$=".pdf"]:before {
+  content: url(imagens/pdf-icon.gif);
+  display: inline-block;
+  margin-right: 15px;
+}
+
+a {
+  font-size: 1em;
+  color: burlywood;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkgoldenrod;
+  transition: 3s;
+}
+
+hr {
+  margin: 15px 0;
+  border: 2px dotted gray; 
+}
+
+label {
+  height: 25px;
+  display: inline-block;
+  margin-right: 30px;
+}
+/* rolando */
+label .chk2{
+  display:inline-block;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #19aaaa;
+  }
+
+/* bolinha dentro */ 
+label .chk2:before{
+  content: '';
+  display:block;
+  background: #295d71;
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 5px;
+  transition: all .4s ease-in-out;
+
+}
+
+label input:checked + .chk2:before{
+  transform: translate(30px);
+  background: #4a839a;
+}
+#chk2{
+  visibility: hidden;
+  width: 1px;
+    height: 1px;
+  overflow: hidden;
+}
+
+/* padrão */
+.chk{
+  display: inline-block;
+  border: 2px solid #454545;
+  background: #bbb;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+/*esconder o checkbox original de todos*/ 
+input[type="checkbox"]{
+  height: 1px;
+  width: 2px;
+  overflow: hidden;
+  visibility: hidden;
+  display: inline-block;
+  margin: 0;
+}
+
+/*  configuração do botão */
+input[type="checkbox"] + label .chk {
+  border-radius: 10px;
+}
+
+input[type="checkbox"]:checked + label .chk:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  border: 3px solid white;
+  transform: rotate(45deg);
+  border-top-color: transparent;
+  border-left-color: transparent;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+}
+input[type="checkbox"]:checked + label .chk {
+  background: red;
+  position: relative;
+
+}

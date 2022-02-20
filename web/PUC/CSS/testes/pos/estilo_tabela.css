@@ -1,0 +1,86 @@
+body {
+  font-family: calibri, arial, sans-serif;
+  background-color: #1f1f1f;
+  color: gray;
+  margin: 1em 3em 1em 3em;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: xx-large;
+  font-weight: normal;
+  color: teal;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h2 {
+  text-indent: 2em;
+  font-weight: 100;
+  margin: 0em 3em 0 3em;
+  border-bottom: 2px teal solid;
+  text-align: center;
+}
+
+p {  
+  color: gray;
+}
+
+#status {
+  text-align: left;
+  margin: 1em;
+  border-collapse: collapse;
+
+}
+
+#status td,
+#status th {
+  border: 1px dimgray solid;
+}
+
+#status tfoot tr:last-child td {
+  border: 0;
+  color: gray;
+}
+
+#status tfoot a {
+  text-decoration: inherit;
+  display: inline-block;
+  color=gray;
+}
+
+caption {
+  margin: 1em;
+  padding: 1em;
+}
+
+thead tr td {
+  background-color: gainsboro;
+  margin: 1em;
+  padding: 1em;
+  color: teal;
+  font-size: 1em;
+}
+
+#pais {
+  width: 70px;
+  padding: 3px;
+  font-size: 1em;
+}
+#km{
+   width: 100px;
+}
+#contato {
+  border: 1px dimgray solid;
+  margin: 1em;
+  padding: 2em;
+  border-width: thick;
+  color: gray;
+  border-radius: 60px 0px;
+  box-shadow: 5px 5px 9px black;
+}
+#contato label{
+  vertical-align: top;
+  display: inline-block;
+  width: 5em;
+}

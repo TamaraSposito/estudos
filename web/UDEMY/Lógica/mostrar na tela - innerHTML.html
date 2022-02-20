@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> Aritmética </title>
+    <meta charset="utf-8" \>
+</head>
+
+<body>
+    <h1> Tabuada - lógica de programação </h1>
+    <button onclick="mostrarTabuada()">Criar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+    <div id="output"></div>
+
+    <script>
+        var output = document.querySelector('#output'); //ACESSAR O HTML 
+        var mensagem = '';
+        for (var i = 0; i <= 1000; i++) {
+            mensagem += 'i: ' + i + '<br>';
+        }
+        output.innerHTML = mensagem; //mostra a mensagem na tela 
+        //output.innerHTML = "inserir o texto no HTML pelo JavaScript"; 
+        //console.log(output);  "serve para desenvolvedor mexer no codigo no console do Chrome."
+    </script>
+</body>
+
+</html>

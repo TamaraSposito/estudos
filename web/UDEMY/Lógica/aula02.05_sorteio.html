@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Logica de Programação Javascript</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+</body>
+
+<script>
+    var jogador1 = prompt("Qual o nome do jogador 1");
+    var n1 = parseInt(prompt(jogador1 + " Digite um número"));
+    //fazer jogador1 digitar um numero
+    //fazer jogador2 digitar outro numero
+    var jogador2 = prompt("Qual o nome do jogador 2");
+    var n2 = parseInt(prompt(jogador2 + " Digite um número"));
+    var sorteio = parseInt(Math.random() * 2);
+    document.write(jogador1 + "escolheu o número " + n1 + "<br />");
+    document.write(jogador2 + "escolheu o número " + n2 + "<br />");
+
+    //sortear um numero entre 0 e 1                
+    //se forem iguais, mostrar mensagem 'empate'
+    if (n1 === n2) { //true
+        alert("Empate");
+    } else {
+        document.write("<br /> Foi sorteado o número " + sorteio + "<br />");
+        if (sorteio === 0) {
+            if (n1 < n2) {
+                document.write("Ganhou quem escolheu o número Menor <br />");
+                document.write(jogador1 + " é o vencedor ");
+            } else {
+                document.write("Ganhou quem escolheu o número Menor <br />");
+                document.write(jogador2 + " é o vencedor ");
+            }
+        } else {
+            if (n1 > n2) {
+                document.write("Ganhou quem escolheu o número Menor <br />");
+                document.write(jogador1 + " é o vencedor ");
+            } else {
+                document.write("Ganhou quem escolheu o número Menor <br />");
+                document.write(jogador2 + " é o vencedor ");
+            }
+        }
+    }
+    // se o numero sorteado for 0, ganha quem escolher o numero MENOR
+    //se o numero sorteado for 1, ganha quem escolher o numero MAIOR
+</script>
+
+</html>

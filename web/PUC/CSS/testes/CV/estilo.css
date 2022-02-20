@@ -1,0 +1,92 @@
+body {
+  font-family: calibri, arial, sans-serif;
+  font-size: 12pt;
+  background-image: url(natura.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  
+  color: gray;
+  margin: 3em 5em 3em 6em;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: xx-large;
+  font-weight: normal;
+  color: teal;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h2 {
+  text-indent: 2em;
+  font-weight: 100;
+  margin: 0em 3em 0 3em;
+  border-bottom: 2px teal solid;
+  text-align: center;
+  }
+
+pre {
+  padding-top: 2em;
+  font-family: calibri, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  color: gray;
+  line-height: 1.5;
+}
+
+p, ul, ol {
+  text-align: justify;
+  line-height: 1.5;
+
+}
+p{
+  background-color: gainsboro;
+  margin: 1em;
+  padding: 2em;
+  border-width: thick;
+  color: gray;
+  border-radius: 60px 0px;
+  box-shadow: 5px 5px 9px black;
+  }
+
+footer {
+  font-family: cursive;
+  font-size: smaller;
+}
+a:hover{
+  background-color: darkslategray;
+}
+a {
+  color: darkgray;
+  text-decoration: inherit;
+}
+nav ul{
+  padding-left: 0;
+  padding-bottom: 2em;
+  text-align: right;
+}
+nav li{
+  display: inline-block;
+}
+nav a{
+  display: inline-block;
+  padding: 5px 1.5em;
+  background-color: #363636;
+  color= gray;
+  border-radius: 5px;
+  font-size: smaller;
+  box-shadow: 3px 3px 6px black;
+}
+nav a:hover{
+  background-color: azure;
+}
+
+h5 { 
+  font-family: calibri, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  color: gray;
+}

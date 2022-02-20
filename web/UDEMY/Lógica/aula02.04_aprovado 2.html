@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Logica de Programação Javascript</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <script>
+        var nome = prompt("Qual o seu nome?");
+        //pedir para o usuario digitar um numero
+        var n1 = prompt("Digite um número");
+        n1 = parseFloat(n1);
+        //pedir para o usuario digitar outro numero
+        var n2 = parseFloat(prompt("Digite outro número"));
+        //n2= parseFloat(n2);
+        var media = (n1 + n2) / 2;
+
+        document.write("bem vindo, " + nome + "<br />");
+        document.write("Vamos descobrir a média aritmética de " + n1 + " e " + n2 + "<br />");
+        document.write("A média aritmética é: " + media + "<br />");
+
+        /*Comparação nota maior que 5*/
+        document.write("A média é maior que 5? " + (media > 5) + "<br />");
+        /* Se maior que 5 - parabéns - senão reprovado */
+        if (media > 5 && n1 > 0 && n2 > 0) {
+            // true - bloco verdade
+            document.write("<br /> <br /> Parabéns, você foi aprovado")
+
+        } else {
+            // bloco mentira
+            alert("Você precisa estudar mais, foi reprovado.")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Mini Calculadora</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+
+    <button onclick="adicao()">Adição (+)</button>
+    <button onclick="subtracao()">Subtração (-)</button>
+    <button onclick="multiplicacao()">Multiplicação (x)</button>
+    <button onclick="divisao()">Divisão (/)</button>
+    <div id="output"></div>
+
+    <script>
+        var output = document.querySelector('#output');
+        var mensagem = '';
+        var n1 = prompt("Digite um número");
+        n1 = parseFloat(n1);
+        output.innerHTML = '<br>' + n1;
+        var resultado = '';
+        resultado = parseFloat(resultado);
+        resultado = n1;
+
+
+        function adicao() {
+            var soma = prompt('digite um número');
+            soma = parseFloat(soma);
+            mensagem = '<br>' (resultado + soma);
+
+            output.innerHTML = mensagem;
+        }
+
+        function subtracao() {
+            var sub = prompt('digite um número');
+            sub = parseFloat(sub);
+            mensagem = '<br>' (resultado + Sub);
+
+            output.innerHTML = mensagem;
+        }
+
+
+        function multiplicacao() {
+            var vezes = prompt('digite um número');
+            vezes = parseFloat(vezes);
+            mensagem = '<br>' (resultado + vezes);
+
+            output.innerHTML = mensagem;
+        }
+
+        function divisao() {
+            var div = prompt('digite um número');
+            div = parseFloat(div);
+            resultado = '<br>' (resultado + div);
+
+            output.innerHTML = mensagem;
+        }
+
+
+
+        console.log(output);
+    </script>
+</body>
+
+</html>

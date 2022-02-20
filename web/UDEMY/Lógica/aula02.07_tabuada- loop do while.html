@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Logica de Programação Javascript</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        var nome = prompt("Qual o seu nome?");
+    </script>
+    <h1>Lógica de programação com Javascript</h1>
+    <h2>Soma, subtração, multiplicação e divisão com o número escolhido.</h2>
+    <h3>Olá,
+        <script>
+            document.write(nome);
+        </script>
+    </h3>
+    <script>
+        //pedir para o usuario digitar um numero; 
+        //repetir a tabuada até 1000 
+        //a cada 10 números inserir uma linha 
+        var n1 = prompt("Digite um número ");
+        n1 = parseFloat(n1);
+        var indice = 1;
+
+        do {
+            document.write(n1 + ' X ' + indice + ' = ' + (n1 * indice) + '<br />');
+            indice = indice + 1;
+            //indice +=1;
+            //indice ++;
+        }
+        while (indice <= 1000) {
+            document.write("fim das contas");
+        }
+    </script>
+</body>
+
+</html>

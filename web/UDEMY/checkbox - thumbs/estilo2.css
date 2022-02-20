@@ -1,0 +1,69 @@
+body{
+  font-family: sans-serif;
+  margin: 35px;
+  
+}
+h1{
+  font-size: 3em;
+  font-weight: 800;
+  font-variant: small-caps;
+  text-align: right;
+  border-right: 3px dotted gray;
+  padding:  0 20px
+}
+
+h2{
+  font-size: 2em;
+  font-weight: 500;
+  font-variant: small-caps;
+  text-align: left;
+  border-left: 3px dotted gray;
+  padding:  0 20px
+}
+hr{
+  margin: 15px 0;
+}
+
+label{
+  margin-right: 35px;
+  height: 15px;
+}
+
+label .chk2{
+  display:inline-block;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #19aaaa;
+  margin-right: 10px;
+  }
+
+/* bolinha dentro */ 
+label .chk2:before{
+  content: '';
+  display:block;
+  background: #098181;
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 5px;
+  transition: all .4s ease-in-out;
+
+}
+
+label input:checked + .chk2:before{
+  transform: translate(30px);
+  background: #095353;
+  
+}
+
+label input:focus + .chk2{
+  box-shadow: 0 0 0 2px #433c3c;
+  /*  0: x ; 0: y ; 0: esfumaçamento ; 2px; largura */
+}
+input{
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

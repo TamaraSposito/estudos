@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> Tabuada </title>
+    <meta charset="utf-8" \>
+</head>
+
+<body>
+    <h1> Tabuada - lógica de programação </h1>
+    <button onclick="mostrarTabuada()">Criar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+    <div id="output"></div>
+
+    <script>
+        function mostrarTabuada() {
+            // perguntar o número para o usuário
+            // converter o número
+            var n1 = prompt("Digite um número");
+            limparTabuada();
+            n1 = parseFloat(n1);
+            // criar uma variável que servirá de indice
+            var indice = 1;
+            // enquanto indice <= 1000
+            // concatena na váriavel mensagem
+            while (indice <= 1000) {
+                mensagem += n1 + ' x ' + indice + ' = ' + (n1 * indice) + ' <br> ';
+                indice++;
+            }
+            output.innerHTML = mensagem;
+        }
+
+        function limparTabuada() {
+            mensagem = '';
+            output.innerHTML = mensagem;
+        }
+
+        var output = document.querySelector('#output'); //ACESSAR O HTML 
+        var mensagem = '';
+        console.log(output);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+  <title> pagina de exemplo estrutura basica </title>
+  <meta charset="utf-8">
+  <meta name="author" content="Daniel">
+  <meta name="description" content="descrição bacanuda">
+  <meta name="keywords" content="html5, tecnologia">
+
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      background-color: aqua;
+      background-image: linear-gradient(to right top, white, transparent), linear-gradient(70deg, red 10%, blue 30%, black 50%, white 70%, orange 90%);
+    }
+
+    selection {
+      display: inline-block;
+    }
+
+    #radius {
+      float: left;
+      background: red;
+      width: 200px;
+      height: 200px;
+      margin: 10px auto;
+      border-radius: 50px 100px / 100px 50px;
+    }
+
+    #radius1 {
+      float: right;
+      background: black;
+      width: 200px;
+      height: 200px;
+      margin: 125px auto;
+      border-radius: 50%;
+
+    }
+
+    #shadow {
+      float: none;
+      background: green;
+      width: 200px;
+      height: 200px;
+      margin: 50px auto;
+      border-radius: 50px 100px / 30px 50px;
+      box-shadow: 30px 0 10px -20px black, 10px 10px 0 red, -5px -5px 0 10px blue;
+    }
+
+    h1 {
+      font-family: sans-serif;
+      font-size: 50px;
+      text-align: center;
+      text-shadow: -3px 1px 0 red, 2px -2px 0 blue, 9px -3px 0 yellow, 1px 4px 0 orange, -5px 5px 0 green;
+    }
+
+    h2 {
+      font-family: sans-serif;
+      font-size: 50px;
+      text-align: center;
+      text-shadow: -1px 1px 0 #5d5d5d, -2px 2px 0 #727272, -3px 3px 0 #868686, -4px 4px 0 #a3a3a3, -5px 5px 0 #bcbcbc;
+    }
+  </style>
+  <!-- BORDER RADIUS : ANTES DA BARRA EIXO X/ DEPOIS EIXO Y-->
+</head>
+
+<body>
+  <h1>CSS efeitos</h1>
+
+  <h2> BORDER Radius</h2>
+  <selection>
+    <div id="radius"></div>
+    <div id="radius1"></div>
+  </selection>
+
+  <h2> BOX Shadow </h2>
+  <div id="shadow"></div>
+
+
+</body></html>

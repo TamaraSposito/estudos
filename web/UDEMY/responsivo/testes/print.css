@@ -1,0 +1,17 @@
+body{
+  font-family: serif;
+  font-size: 16px;
+  color:deeppink;
+  background: white;
+}
+
+a{
+  color: #999;
+  text-decoration: none;
+}
+a:after{
+content: "- "attr(href)"";
+  display: inline-block;
+  margin: 0 10px;
+  
+}

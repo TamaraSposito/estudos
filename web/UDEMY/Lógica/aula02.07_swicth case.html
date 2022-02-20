@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Logica de Programação Javascript</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <script>
+        var nome = prompt("Qual o seu nome?");
+        //pedir para o usuario digitar um numero
+        var n1 = prompt("Digite um número de 1 a 6");
+        n1 = parseInt(n1);
+        //pedir para o usuario digitar outro numero
+
+        document.write("bem vindo, " + nome + "<br />  O número digitado foi " + n1);
+        switch (n1) {
+            case 1:
+                document.write(" você acertou na megasena");
+                break;
+            case 2:
+                document.write(" você ficou pobre");
+                break;
+            case 3:
+                document.write(" você merece ganhar uma herança");
+                break;
+            case 4:
+                document.write(" parabéns passou na universidade");
+                break;
+            case 5:
+                document.write(" tente novamente");
+                break;
+            case 6:
+                document.write(" chora não nenem");
+                break;
+            default:
+                alert('Digite um número de 1 a 6');
+
+        }
+    </script>
+</body>
+
+</html>

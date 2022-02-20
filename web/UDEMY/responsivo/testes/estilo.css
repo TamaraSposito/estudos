@@ -1,0 +1,118 @@
+
+body {
+  font-family: arial, sans-serif;
+  background: rgb(242, 241, 239);
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+  font-size: .75em;
+}
+
+a:hover {
+  color: #8da28e;
+  transition: all .2s;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-variant: small-caps;
+  text-align: right;
+  border-right: 3px dotted gray;
+  border-bottom: .1em dotted gray;
+  padding: 0 20px;
+  color: dimgray;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 600;
+  font-variant: small-caps;
+  text-align: left;
+  border-left: 1px dotted gray;
+  padding: .5em .5em;
+  color: dimgray;
+}
+
+1 .teste {
+  background: red;
+  width: 320px;
+  height: 50px;
+}
+
+.container {
+  background: white;
+  padding: 15px;
+}
+
+.container div {
+  background: #ccc;
+  margin-bottom: 15px;
+  width: 20em;
+  /* 320px /16px = 20 em
+  150 /16 = 9.375em*/
+  height: 10em;
+  font-size: .75em;
+}
+
+.clearfix::after {
+  content: ' ';
+  display: block;
+  clear: both
+}
+
+.lorem {
+  border: 1px solid black;
+  /* padding: 16px;*/
+  padding: 1em;
+  width: 320px;
+  /* 320 / 16 */
+  width: 20em;
+  /*margin: 100px auto;
+  100 / 16= 6.25em; 
+  auto deixa centralizado.*/
+  margin: 6.25em auto;
+  /*                font-size: 2em;*/
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 20px;
+  font-size: 1.25em;
+  /* 16 x 1.25 = 20 */
+}
+
+.link {
+ font-size: 24px;
+  font-size: 1.2em;
+  font-size: 1rem;
+  /* 24 / 20 =  1.2
+    aqui ele pega o tamanho do "pai - div"*/
+}
+
+
+
+@media only screen and (min-width: 400px) {
+  body {
+    background: #bbd4ae;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    font-variant: small-caps;
+    text-align: right;
+    border-right: 3px dotted gray;
+    padding: 0 20px;
+    color: dimgray;
+  }
+
+  .container div {
+    margin: 10px;
+    width: calc(50% - 20px);
+    float: left;
+  }
+}

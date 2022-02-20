@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="autor" content="Tamara Sposito" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <title>Curriculo Vitae - Tamara Sposito</title>
+  <script>
+    "use strict";
+    
+
+      var vermelhos = {
+        _cor: "vermelho",
+        get cor() {
+            return this._cor; },
+        set cor(c) {
+            if( c.indexOf(this._cor) >= 0 )
+                this._cor = c; }
+                       }
+    minhaCor1 = Object.create(vermelhos);
+    minhaCor1.cor = "vermelho claro";
+
+    minhaCor2 = Object.create(minhaCor1);
+    minhaCor2.cor = "azul";
+    console.log(minhaCor2.cor);
+
+    
+    
+    
+     var fe = function fn() {
+          console.log(fe === fn);    };
+        fe();
+        fn();
+    /*  
+
+    (ReferenceError e ReferenceError.) 
+    var fe = function fn() {
+          console.log(fe === fn);    };
+        fe();
+        fn();
+
+//2 - true
+    console.log(Number("1") - 1 === 0);
+    //1 - objeto
+    function f() {
+      return {
+        n: 1
+      };
+    }
+    console.log(typeof f());
+// 5 - 1
+ var x = 3;
+    var o1 = {
+              x: 2,
+              o2: {
+                  x: 1,
+                  o3: function() {
+                                  return this.x;
+                                  }
+                  }
+            }
+    console.log(o1.o2.o3());
+
+// 
+    function soma(x, y) {
+      return x + y;
+    }
+    console.log(soma(3, 5));
+
+
+    //
+    var n = ' Tamara "linda"';
+    console.log(n);
+    var obj = '<option value="3"> \terceiro\</option>';
+    console.log(obj);
+
+
+    */
+    //
+   
+
+
+
+    
+
+
+
+
+
+
+    //
+  </script>
+</head>
+
+<body>
+  <h1 id="titulo">Teste JS</h1>
+  <p id="linha"> Assim sendo, o JavaScript fornece às páginas web a possibilidade de programação, transformação e processamento de dados enviados e recebidos, interagindo com a marcação e exibição de conteúdo da linguagem HTML e com a estilização desse conteúdo proporcionada pelo CSS nessas páginas</p>
+</body></html>
